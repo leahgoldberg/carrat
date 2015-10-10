@@ -17,9 +17,11 @@ ActiveRecord::Schema.define(version: 20151010214456) do
   enable_extension "plpgsql"
 
   create_table "challenges", force: true do |t|
-    t.boolean  "active",      default: false
+    t.boolean  "active",            default: false
     t.integer  "vendor_id"
-    t.string   "name"
+    t.integer  "spend_amount"
+    t.string   "time_frame"
+    t.integer  "points_multiplier"
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -48,8 +50,8 @@ ActiveRecord::Schema.define(version: 20151010214456) do
   end
 
   create_table "transactions", force: true do |t|
-    t.date     "purchase_date"
     t.string   "vendor"
+    t.integer  "user_id"
     t.float    "amount"
     t.string   "category"
     t.datetime "created_at"
