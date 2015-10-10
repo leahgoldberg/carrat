@@ -11,16 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010182412) do
+ActiveRecord::Schema.define(version: 20151010192244) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "challenges", force: true do |t|
-    t.boolean  "active",      default: false
-    t.string   "category"
-    t.string   "vendor"
-    t.string   "name"
+    t.boolean  "active",            default: false
+    t.integer  "vendor_id"
+    t.integer  "spend_amount"
+    t.string   "time_frame"
+    t.integer  "points_multiplier"
     t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -42,7 +43,7 @@ ActiveRecord::Schema.define(version: 20151010182412) do
 
   create_table "rewards", force: true do |t|
     t.integer  "point_cost"
-    t.string   "vendor"
+    t.integer  "vendor_id"
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -53,6 +54,13 @@ ActiveRecord::Schema.define(version: 20151010182412) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "vendors", force: true do |t|
+    t.string   "name"
+    t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
