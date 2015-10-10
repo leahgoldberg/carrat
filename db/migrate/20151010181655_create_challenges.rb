@@ -3,7 +3,9 @@ class CreateChallenges < ActiveRecord::Migration
     create_table :challenges do |t|
     	t.boolean :active, default:false
     	t.references :vendor
-    	t.string :name
+    	t.integer :spend_amount
+    	t.string :time_frame
+    	t.integer :points_multiplier
     	t.string :description
       t.timestamps
     end
