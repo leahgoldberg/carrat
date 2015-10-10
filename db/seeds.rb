@@ -21,7 +21,7 @@ morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
 morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
 morgan.transactions.create(vendor: "Starbucks", amount:3.32, category: "Coffee")
 morgan.transactions.create(vendor: "some place", amount:20.56, category: "Groceries")
-morgan.transactions.create(vendor: "another place", amount:20.56, category: "Groceries")
+morgan.transactions.create(vendor: "grocery", amount:20.56, category: "Groceries")
 
 # Vendors
 

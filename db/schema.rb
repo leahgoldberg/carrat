@@ -18,7 +18,8 @@ ActiveRecord::Schema.define(version: 20151010214456) do
 
   create_table "challenges", force: true do |t|
     t.boolean  "active",            default: false
-    t.integer  "vendor_id"
+    t.string   "vendor"
+    t.string   "category"
     t.integer  "spend_amount"
     t.string   "time_frame"
     t.integer  "points_multiplier"
@@ -43,7 +44,8 @@ ActiveRecord::Schema.define(version: 20151010214456) do
 
   create_table "rewards", force: true do |t|
     t.integer  "point_cost"
-    t.integer  "vendor_id"
+    t.string   "vendor"
+    t.string   "category"
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
