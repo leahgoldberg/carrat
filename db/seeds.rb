@@ -1,6 +1,6 @@
 # Users
 
-morgan = User.create(points: 7000, first_name: "Morgan", last_name: "Stanley", email: "m.stanly@example.com")
+morgan = User.create(points: 70000, first_name: "Morgan", last_name: "Stanley", email: "m.stanly@example.com")
 
 # Transactions
 

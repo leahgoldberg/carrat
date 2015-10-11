@@ -21,7 +21,14 @@
 
   <div class="small-12 medium-3 large-4 columns">
     <div class="index-river side-nav" id="notifications">
-      <h6>NOTIFICATIONS</h6>
+      <h6 id="notify-trigger">NOTIFICATIONS</h6>
+      <div id="new-notification" style="display:none">
+        <hr/>
+        <div class="notification">
+          <h6 id="new-note-title">Completed Target 2x points challenge for 2400 carrats</h6>
+          <p id="new-note-time">Today at 5:15 PM</p>
+        </div>  
+      </div>  
         <%= render partial: "users/notification", collection: @notifications %>
     </div>
     <div class="index-river side-nav" id="trusted-brands">
