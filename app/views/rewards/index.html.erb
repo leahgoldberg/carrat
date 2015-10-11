@@ -4,8 +4,8 @@
 			<% row_of_four.each do |reward| %>
 				<li>
 					<img src="<%= reward.image_url %>">
-					<div><%= reward.title %></div>
-					<div>$<%= reward.price %></div>
+					<div><%= reward.stripped_title %></div>
+					<div><%= reward.carrats %> carrats</div>
 				</li>
 			<% end %>
 		</ul>
