@@ -6,8 +6,7 @@ function initSqoot() {
 		  data: { deals: data.deals }
 		})
 		  .done(function(){
-
-		  	
+	
 		  })
 		  .fail(console.log("Failure to send data"));
 	}).fail(function(){
