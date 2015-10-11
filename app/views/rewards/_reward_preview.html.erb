@@ -6,10 +6,12 @@
         <img class="transparent" src="<%= top_reward.image_url %>">
       </a>
     </div>
-    <h6><%= top_reward.title %></h6>
-    <p>$<%= top_reward.price %></p>
+    <h6><%= top_reward.stripped_title %></h6>
+    <p><%= top_reward.carrats %> carrats</p>
   </li>
 <% end %>
+
+<%= link_to("See more rewards", rewards_path) %>
 </ul>
 
 <ul class ="medium-block-grid-3 show-for-medium">
@@ -20,10 +22,12 @@
         <img class="transparent" src="<%= top_reward.image_url %>">
       </a>
     </div>
-    <h6><%= top_reward.title %></h6>
-    <p>$<%= top_reward.price %></p>
+    <h6><%= top_reward.stripped_title %></h6>
+    <p><%= top_reward.carrats %> carrats</p>
   </li>
 <% end %>
+
+<%= link_to("See more rewards", rewards_path) %>
 </ul>
 
 <ul class ="small-block-grid-3 show-for-small">
@@ -34,8 +38,10 @@
         <img class="transparent" src="<%= top_reward.image_url %>">
       </a>
     </div>
-    <h6><%= top_reward.title %></h6>
-    <p>$<%= top_reward.price %></p>
+    <h6><%= top_reward.stripped_title %></h6>
+    <p><%= top_reward.carrats %> carrats</p>
   </li>
 <% end %>
+
+<%= link_to("See more rewards", rewards_path) %>
 </ul>
