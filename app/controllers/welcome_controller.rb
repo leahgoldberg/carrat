@@ -6,6 +6,7 @@ class WelcomeController < ApplicationController
 		@top_rewards = Reward.curate(current_user)
     @top3_rewards = Reward.limit(3)
 		@preferred_brands = current_user.preferred_brands
+    @notifications = current_user.notifications
 	end
 
 end

@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151011041917) do
+ActiveRecord::Schema.define(version: 20151011145035) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "challenges", force: :cascade do |t|
-    t.boolean  "active",            default: true
+    t.boolean  "active",                        default: true
     t.integer  "vendor_id"
     t.integer  "spend_amount"
-    t.string   "time_frame"
+    t.string   "time_frame",        limit: 255
     t.integer  "points_multiplier"
-    t.string   "description"
+    t.string   "description",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -41,49 +41,57 @@ ActiveRecord::Schema.define(version: 20151011041917) do
     t.datetime "updated_at"
   end
 
+  create_table "notifications", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "content"
+    t.string   "notified_day"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
   create_table "rewards", force: :cascade do |t|
-    t.boolean  "active",     default: true
+    t.boolean  "active",                          default: true
     t.integer  "point_cost"
     t.integer  "vendor_id"
-    t.string   "title"
-    t.string   "short_title"
+    t.string   "title",               limit: 255
+    t.string   "short_title",         limit: 255
     t.text     "description"
     t.float    "discount_amount"
     t.float    "discount_percentage"
-    t.string   "expires_at"
+    t.string   "expires_at",          limit: 255
     t.text     "fine_print"
-    t.string   "image_url"
+    t.string   "image_url",           limit: 255
     t.float    "price"
-    t.string   "untracked_url"
+    t.string   "untracked_url",       limit: 255
     t.float    "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.string   "vendor"
+    t.string   "vendor",     limit: 255
     t.integer  "user_id"
     t.float    "amount"
-    t.string   "category"
+    t.string   "category",   limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: :cascade do |t|
     t.integer  "points"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
+    t.string   "first_name", limit: 255
+    t.string   "last_name",  limit: 255
+    t.string   "email",      limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "vendors", force: :cascade do |t|
-    t.string   "name"
-    t.string   "category"
+    t.string   "name",       limit: 255
+    t.string   "category",   limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "logo"
+    t.string   "logo",       limit: 255
   end
 
 end
