@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20151010214456) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "challenges", force: true do |t|
+  create_table "challenges", force: :cascade do |t|
     t.boolean  "active",            default: true
     t.integer  "vendor_id"
     t.integer  "spend_amount"
@@ -27,21 +27,21 @@ ActiveRecord::Schema.define(version: 20151010214456) do
     t.datetime "updated_at"
   end
 
-  create_table "claimed_rewards", force: true do |t|
+  create_table "claimed_rewards", force: :cascade do |t|
     t.integer  "reward_id"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "completed_challenges", force: true do |t|
+  create_table "completed_challenges", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "challenge_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "rewards", force: true do |t|
+  create_table "rewards", force: :cascade do |t|
     t.boolean  "active",     default: true
     t.integer  "point_cost"
     t.integer  "vendor_id"
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 20151010214456) do
     t.datetime "updated_at"
   end
 
-  create_table "transactions", force: true do |t|
+  create_table "transactions", force: :cascade do |t|
     t.string   "vendor"
     t.integer  "user_id"
     t.float    "amount"
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 20151010214456) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.integer  "points"
     t.string   "first_name"
     t.string   "last_name"
@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20151010214456) do
     t.datetime "updated_at"
   end
 
-  create_table "vendors", force: true do |t|
+  create_table "vendors", force: :cascade do |t|
     t.string   "name"
     t.string   "category"
     t.datetime "created_at"
