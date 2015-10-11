@@ -48,7 +48,7 @@ time = ["between 12-2PM","anytime","between 8AM-12PM","between 10AM-12PM","betwe
 pts = [2,2,2,2,3]
 
 Vendor.all.each do |v|
-	Challenge.create(vendor: v, spend_amount: amt.sample, time_frame: time.sample, points_multiplier: pts.sample)
+	v.challenges.create(spend_amount: amt.sample, time_frame: time.sample, points_multiplier: pts.sample)
 end
 
 # Rewards

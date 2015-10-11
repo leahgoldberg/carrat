@@ -7,7 +7,8 @@ module Curatable
 	module ClassMethods
 		def curate(user)
 			ranked_possibilities = rank_vendors_and_categories(user).map { |k,v| k}
-			result = Vendor.where(name: ranked_possibilities)
+			result = Vendor.where(name: ranked_possibilities) + Vendor.where(category: ranked_possibilities)
+			thing = self.where(vendor_id: result)
 			binding.pry
 		end
 
