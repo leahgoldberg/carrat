@@ -23,7 +23,8 @@ module Curatable
 		end
 
 		def rank_vendors_and_categories(user)
-			calculate_vendor_points(user).merge(calculate_category_points(user)).sort_by {|k,v| -v}.to_h
+			result = calculate_vendor_points(user).merge(calculate_category_points(user)).sort_by {|k,v| -v}
+			Hash[result]
 		end	
 	end	
 		
