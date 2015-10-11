@@ -6,7 +6,7 @@ class CreateRewards < ActiveRecord::Migration
     	t.references :vendor
     	t.string :title
     	t.string :short_title
-    	t.string :description
+    	t.text :description
     	t.float :discount_amount
     	t.float :discount_percentage
     	t.string :expires_at

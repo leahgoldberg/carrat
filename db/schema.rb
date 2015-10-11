@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20151011041917) do
     t.integer  "vendor_id"
     t.string   "title"
     t.string   "short_title"
-    t.string   "description"
+    t.text     "description"
     t.float    "discount_amount"
     t.float    "discount_percentage"
     t.string   "expires_at"
