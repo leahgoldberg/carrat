@@ -25,20 +25,17 @@ morgan.transactions.create(vendor: "grocery", amount:20.56, category: "Groceries
 
 # Vendors
 
-Vendor.create(name: "Whole Foods", category: "Groceries")
-Vendor.create(name: "Giant", category: "Groceries")
-Vendor.create(name: "Harris Teeter", category: "Groceries")
-Vendor.create(name: "Trader Joes", category: "Groceries")
+Vendor.create(name: "Whole Foods", category: "Groceries", logo: "http://simpleicon.com/wp-content/uploads/Shopping-Cart-9.png")
 
 Vendor.create(name: "Exxon", category: "Gas")
 Vendor.create(name: "BP", category: "Gas")
 Vendor.create(name: "Sunoco", category: "Gas")
 
 Vendor.create(name: "Express", category: "Fashion")
-Vendor.create(name: "Nordstrom", category: "Fashion")
+Vendor.create(name: "Nordstrom", category: "Fashion", logo: "https://cdn4.iconfinder.com/data/icons/dot/128/hanger.png")
 Vendor.create(name: "Macys", category: "Fashion")
 
-Vendor.create(name: "Starbucks")
+Vendor.create(name: "Starbucks", category: "Coffee", logo:"https://cdn1.iconfinder.com/data/icons/hotel-restaurant/512/15-512.png")
 Vendor.create(name: "Open Kitchen")
 Vendor.create(name: "Target")
 
