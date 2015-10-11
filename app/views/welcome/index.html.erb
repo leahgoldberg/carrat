@@ -12,7 +12,7 @@
     </div>
 
     <div class="index-river" id="challenges">
-      <h6 id="challenges-title">Challenges</h6>
+      <h6 id="challenges-title">CHALLENGES</h6>
       <div id="challenges-list">
         <%= render @challenges %>
       </div>
@@ -21,13 +21,11 @@
 
   <div class="small-12 medium-3 large-4 columns">
     <div class="index-river side-nav" id="notifications">
-      <h6>Notifications</h6>
+      <h6>NOTIFICATIONS</h6>
         <%= render partial: "users/notification", collection: @notifications %>
     </div>
-    <div class="index-river side-nav" id="preferred-brands">
-      <h6>Preferred Brands</h6>
-      <ul id="brands-list">
-      </ul>
+    <div class="index-river side-nav" id="trusted-brands">
+      <%= render partial: "brands/trusted_brands" %>
     </div>
   </div>
 </div>
