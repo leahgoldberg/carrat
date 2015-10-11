@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20151011145035) do
   enable_extension "plpgsql"
 
   create_table "challenges", force: :cascade do |t|
-    t.boolean  "active",                        default: true
+    t.boolean  "active",            default: true
     t.integer  "vendor_id"
     t.integer  "spend_amount"
-    t.string   "time_frame",        limit: 255
+    t.string   "time_frame"
     t.integer  "points_multiplier"
-    t.string   "description",       limit: 255
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,48 +50,48 @@ ActiveRecord::Schema.define(version: 20151011145035) do
   end
 
   create_table "rewards", force: :cascade do |t|
-    t.boolean  "active",                          default: true
+    t.boolean  "active",              default: true
     t.integer  "point_cost"
     t.integer  "vendor_id"
-    t.string   "title",               limit: 255
-    t.string   "short_title",         limit: 255
+    t.string   "title"
+    t.string   "short_title"
     t.text     "description"
     t.float    "discount_amount"
     t.float    "discount_percentage"
-    t.string   "expires_at",          limit: 255
+    t.string   "expires_at"
     t.text     "fine_print"
-    t.string   "image_url",           limit: 255
+    t.string   "image_url"
     t.float    "price"
-    t.string   "untracked_url",       limit: 255
+    t.string   "untracked_url"
     t.float    "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "transactions", force: :cascade do |t|
-    t.string   "vendor",     limit: 255
+    t.string   "vendor"
     t.integer  "user_id"
     t.float    "amount"
-    t.string   "category",   limit: 255
+    t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: :cascade do |t|
     t.integer  "points"
-    t.string   "first_name", limit: 255
-    t.string   "last_name",  limit: 255
-    t.string   "email",      limit: 255
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "vendors", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.string   "category",   limit: 255
+    t.string   "name"
+    t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "logo",       limit: 255
+    t.string   "logo"
   end
 
 end
