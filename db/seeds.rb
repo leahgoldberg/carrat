@@ -14,6 +14,8 @@ morgan.transactions.create(vendor: "grocery", amount:20.56, category: "Groceries
 morgan.transactions.create(vendor: "Nordstrom", amount:520.56, category: "Fashion")
 morgan.transactions.create(vendor: "Nordstrom", amount:200.88, category: "Fashion")
 morgan.transactions.create(vendor: "Nordstrom", amount:144.52, category: "Fashion")
+morgan.transactions.create(vendor: "Nordstrom", amount:200.88, category: "Fashion")
+morgan.transactions.create(vendor: "Nordstrom", amount:144.52, category: "Fashion")
 morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
 morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
 morgan.transactions.create(vendor: "Starbucks", amount:3.32, category: "Coffee")
@@ -25,20 +27,17 @@ morgan.transactions.create(vendor: "grocery", amount:20.56, category: "Groceries
 
 # Vendors
 
-Vendor.create(name: "Whole Foods", category: "Groceries")
-Vendor.create(name: "Giant", category: "Groceries")
-Vendor.create(name: "Harris Teeter", category: "Groceries")
-Vendor.create(name: "Trader Joes", category: "Groceries")
+Vendor.create(name: "Whole Foods", category: "Groceries", logo: "groceries_icon.png")
 
 Vendor.create(name: "Exxon", category: "Gas")
 Vendor.create(name: "BP", category: "Gas")
 Vendor.create(name: "Sunoco", category: "Gas")
 
 Vendor.create(name: "Express", category: "Fashion")
-Vendor.create(name: "Nordstrom", category: "Fashion")
+Vendor.create(name: "Nordstrom", category: "Fashion", logo: "fashion_icon.png")
 Vendor.create(name: "Macys", category: "Fashion")
 
-Vendor.create(name: "Starbucks")
+Vendor.create(name: "Starbucks", category: "Coffee", logo:"coffe_icon.png")
 Vendor.create(name: "Open Kitchen")
 Vendor.create(name: "Target")
 

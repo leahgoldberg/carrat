@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151010214456) do
+ActiveRecord::Schema.define(version: 20151011041917) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,16 @@ ActiveRecord::Schema.define(version: 20151010214456) do
     t.integer  "point_cost"
     t.integer  "vendor_id"
     t.string   "title"
+    t.string   "short_title"
+    t.text     "description"
+    t.float    "discount_amount"
+    t.float    "discount_percentage"
+    t.string   "expires_at"
+    t.text     "fine_print"
+    t.string   "image_url"
+    t.float    "price"
+    t.string   "untracked_url"
+    t.float    "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -73,6 +83,7 @@ ActiveRecord::Schema.define(version: 20151010214456) do
     t.string   "category"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "logo"
   end
 
 end
