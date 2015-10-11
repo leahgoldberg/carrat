@@ -1,9 +1,11 @@
 .challenge-item {
+  padding: 5%;
   img {
     float: left;
     width: 20%;
+    margin-right: 20px;
   }
-  p {
-    float: right;
-  }
+  // p {
+  //   margin-left: 10px;
+  // }
 }
