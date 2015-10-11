@@ -9,7 +9,7 @@ class Reward < ActiveRecord::Base
 		self.price.floor * 100
 	end
 
-	def stripped_title
+	def strip_title
 		self.title.downcase
 			.gsub(/[(][$]\d+( value)[)]/, '')
 			.gsub(/[(]\d+[%]( off)[)]/, '')
