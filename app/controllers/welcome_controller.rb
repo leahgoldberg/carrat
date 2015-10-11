@@ -7,10 +7,4 @@ class WelcomeController < ApplicationController
 		@preferred_brands = current_user.preferred_brands
 	end
 
-	private
-
-	def current_user
-		User.find_by(username: "Morgan Stanley")
-	end	
-		
 end
