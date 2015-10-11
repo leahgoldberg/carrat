@@ -15,7 +15,7 @@
 					  	<input type="hidden" name="id" value="<%= reward.id %>">
 					  	<%= f.submit 'Redeem', class: "radius button" %>
 					  <% end %>
-					  <div><%= reward.description.html_safe %></div>
+					  <div id="modal-description"><%= reward.description.html_safe %></div>
 					  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 					</div>
 				</li>
