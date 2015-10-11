@@ -42,10 +42,20 @@ ActiveRecord::Schema.define(version: 20151011041917) do
   end
 
   create_table "rewards", force: true do |t|
-    t.boolean  "active",     default: true
+    t.boolean  "active",              default: true
     t.integer  "point_cost"
     t.integer  "vendor_id"
     t.string   "title"
+    t.string   "short_title"
+    t.text     "description"
+    t.float    "discount_amount"
+    t.float    "discount_percentage"
+    t.string   "expires_at"
+    t.text     "fine_print"
+    t.string   "image_url"
+    t.float    "price"
+    t.string   "untracked_url"
+    t.float    "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

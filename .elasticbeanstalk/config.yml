@@ -1,0 +1,10 @@
+branch-defaults:
+  deploy-aws:
+    environment: carrat-dev
+global:
+  application_name: carrat
+  default_ec2_keyname: null
+  default_platform: Ruby 2.2 (Puma)
+  default_region: us-east-1
+  profile: eb-cli
+  sc: git
