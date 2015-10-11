@@ -7,7 +7,6 @@ class RewardsController < ApplicationController
 	def create
 		params[:deals].each_with_index do |deal_object, index|
 			current_deal = deal_object[1][:deal]
-		require 'pry'; binding.pry
 			vendor = Vendor.find_or_create_by(name: current_deal[:merchant][:name], category: current_deal[:category_name])
 			
 			reward = vendor.rewards.create(
@@ -23,7 +22,6 @@ class RewardsController < ApplicationController
 		    untracked_url: current_deal[:untracked_url],
 		    value: current_deal[:value]
 			)
-
 
 		end
 	end
