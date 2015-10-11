@@ -14,6 +14,9 @@
 
     <div class="index-river" id="challenges">
       <h6>Challenges</h6>
+      <div id="challenges-list">
+        <%= render @challenges %>
+      </div>  
     </div>
   </div>
 
@@ -21,7 +24,10 @@
     <div class="index-river side-nav" id="notifications">
       <h6>Notifications</h6>
     </div>
-    <div class="index-river side-nav" id="trusted-brands">
-      <h6>Trusted Brands</h6>
+    <div class="index-river side-nav" id="preferred-brands">
+      <h6>Preferred Brands</h6>
+      <ul id="brands-list">
+        <li></li>
+      </ul>  
     </div>
 </div>
