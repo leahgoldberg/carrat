@@ -23,7 +23,6 @@ class RewardsController < ApplicationController
 		    untracked_url: current_deal[:untracked_url],
 		    value: current_deal[:value]
 			)
-
 		end
 	end
 end
