@@ -55,6 +55,12 @@ cost = [200,500,1000,2000,5000,10000,50000]
 
 #Reward.create(point_cost: cost.sample, vendor: Vendor.all.sample, title: "???")
 
+# Notifications
+
+morgan.notifications.create(content: "Redeemed fine art prints from Imagine Squares for 1000 carrats", notified_day: "Yesterday at 12:02 PM")
+morgan.notifications.create(content: "Redeemed Jamaican vacation from American Airlines for 50,000 carrats", notified_day: "Yesterday at 6:28 PM")
+morgan.notifications.create(content: "Completed 2x points challenge at Target for 650 carrats", notified_day: "Friday at 1:34 PM")
+
 
 
 
