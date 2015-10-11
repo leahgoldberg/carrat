@@ -5,6 +5,7 @@ class RewardsController < ApplicationController
 	end	
 
 	def create
+		# require 'pry'; binding.pry
 		params[:deals].each_with_index do |deal,i|
 			puts "*" * 10
 			puts "deal: #{deal[1][:deal]}"

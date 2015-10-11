@@ -9,7 +9,7 @@ class CreateRewards < ActiveRecord::Migration
     	t.string :description
     	t.float :discount_amount
     	t.float :discount_percentage
-    	t.string :expiration_date
+    	t.string :expires_at
     	t.string :fine_print
     	t.string :image_url
     	t.float :price

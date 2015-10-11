@@ -14,9 +14,3 @@ function initSqoot() {
 		console.log("Failure to retrieve data");
 	});
 };
-
-
-
-
-
-
