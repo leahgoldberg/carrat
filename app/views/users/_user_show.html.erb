@@ -1,2 +1,8 @@
 <div><%= image_tag 'george.jpg', size: '75', id:"user-avatar" %></div>
-<h3><%= user.first_name %> <%= user.last_name %></h3>
+<div class="show-for-medium-up large-3 columns"><h3><%= user.first_name %> <%= user.last_name %></h3></div>
+<div class="show-for-medium-up large-5 columns"><h3><%= user.email %></h3></div>
+<div class="show-for-large large-3 columns user-points"><h3><%= user.points %> carrats</h3></div>
+<div class="show-for-small row">
+  <div class="small-7 columns"><h3><%= user.first_name %> <%= user.last_name %></h3></div>
+</div>
+  <div class=" show-for-small small-8 small-centered columns"><h3><%= user.email %></h3></div>
