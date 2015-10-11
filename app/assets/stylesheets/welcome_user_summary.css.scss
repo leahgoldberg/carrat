@@ -5,10 +5,17 @@
   padding: 10px;
   margin: 15px;
   background-color: white;
-  h3{
-    float:left;
+  h3,
+  h5 {
     color: #727373;
-    margin-left:.5em;
+  }
+  .user-points {
+    background-color: #fbae37;
+    padding-left: 4%;
+    border-radius: 5px;
+    h3{
+      color: white;
+    }
   }
 
   #user-avatar{
