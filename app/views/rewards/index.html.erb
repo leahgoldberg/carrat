@@ -1,10 +1,11 @@
 <div id="rewards-index" class="container">
 	<% @rewards.each_slice(4) do |row_of_four| %>
-		<ul class="small-block-grid-4">
+		<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
 			<% row_of_four.each do |reward| %>
 				<li>
 					<img src="<%= reward.image_url %>">
-					<%= reward.title %>
+					<div><%= reward.title %></div>
+					<div>$<%= reward.price %></div>
 				</li>
 			<% end %>
 		</ul>
