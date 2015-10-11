@@ -1,16 +1,16 @@
 <div class="contain-to-grid sticky">
-  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large" id: "nav-logo">
+  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
     <ul class="title-area">
       <li class="name">
         <h1><%= link_to image_tag("carrat_logo.png", size: '60'), :root %></h1>
       </li>
-      <li class="has-form">
-        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
-      </li>
+      <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
     </ul>
+
     <section class="top-bar-section">
       <ul class="right">
         <li class="active"><%= link_to "Profile", "#" %></li>
+        <li class="active"><%= link_to "Log out", "#" %></li>
       </ul>
     </section>
   </nav>
