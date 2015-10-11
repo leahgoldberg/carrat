@@ -5,6 +5,7 @@ class RewardsController < ApplicationController
 	end	
 
 	def create
+		binding.pry
 		params[:deals].each_with_index do |deal_object, index|
 
 			current_deal = deal_object[1][:deal]
