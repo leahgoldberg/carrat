@@ -1,5 +1,5 @@
 function initSqoot() {
-	$.ajax("http://api.sqoot.com/v2/deals?api_key=w40j1z").done(function(data){
+	$.getJSON("http://api.sqoot.com/v2/deals?api_key=w40j1z&callback=?").done(function(data){
 		$.ajax({
 		  method: "POST",
 		  url: "/rewards",
@@ -13,3 +13,5 @@ function initSqoot() {
 		console.log("Failure to retrieve data");
 	});
 };
+
+
