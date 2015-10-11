@@ -6,10 +6,11 @@ class RewardsController < ApplicationController
 
 	def create
 		params[:deals].each_with_index do |deal_object, index|
+
 			current_deal = deal_object[1][:deal]
 			vendor = Vendor.find_or_create_by(name: current_deal[:merchant][:name], category: current_deal[:category_name])
 			
-			reward = vendor.rewards.create(
+			reward = vendor.rewards.find_or_create_by(
 				title: current_deal[:title],
 		    short_title: current_deal[:short_title],
 		    description: current_deal[:description],
