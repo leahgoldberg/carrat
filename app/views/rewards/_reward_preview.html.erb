@@ -1,8 +1,38 @@
-<ul class ="small-block-grid-3">
+<ul class ="large-block-grid-3 show-for-large">
 <% @top3_rewards.each do |top_reward| %>
   <li>
-    <div class="thumbnail">
-      <img src="<%= top_reward.image_url %>">
+    <div class = "center-cropped">
+      <a class="th th-item" href="<%= top_reward.image_url %>" style="background-image: url(<%= top_reward.image_url %>);">
+        <img class="transparent" src="<%= top_reward.image_url %>">
+      </a>
+    </div>
+    <h6><%= top_reward.title %></h6>
+    <p>$<%= top_reward.price %></p>
+  </li>
+<% end %>
+</ul>
+
+<ul class ="medium-block-grid-3 show-for-medium">
+<% @top3_rewards.each do |top_reward| %>
+  <li>
+    <div class = "center-cropped">
+      <a class="th th-medium-item" href="<%= top_reward.image_url %>" style="background-image: url(<%= top_reward.image_url %>);">
+        <img class="transparent" src="<%= top_reward.image_url %>">
+      </a>
+    </div>
+    <h6><%= top_reward.title %></h6>
+    <p>$<%= top_reward.price %></p>
+  </li>
+<% end %>
+</ul>
+
+<ul class ="small-block-grid-3 show-for-small">
+<% @top3_rewards.each do |top_reward| %>
+  <li>
+    <div class = "center-cropped">
+      <a class="th th-small-item" href="<%= top_reward.image_url %>" style="background-image: url(<%= top_reward.image_url %>);">
+        <img class="transparent" src="<%= top_reward.image_url %>">
+      </a>
     </div>
     <h6><%= top_reward.title %></h6>
     <p>$<%= top_reward.price %></p>
