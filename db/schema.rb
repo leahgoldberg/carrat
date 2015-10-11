@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20151010214456) do
   enable_extension "plpgsql"
 
   create_table "challenges", force: true do |t|
-    t.boolean  "active",            default: false
+    t.boolean  "active",            default: true
     t.integer  "vendor_id"
     t.integer  "spend_amount"
     t.string   "time_frame"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20151010214456) do
   end
 
   create_table "rewards", force: true do |t|
+    t.boolean  "active",     default: true
     t.integer  "point_cost"
     t.integer  "vendor_id"
     t.string   "title"
