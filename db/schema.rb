@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20151011041917) do
   enable_extension "plpgsql"
 
   create_table "challenges", force: true do |t|
-    t.boolean  "active",            default: true
+    t.boolean  "active",                        default: true
     t.integer  "vendor_id"
     t.integer  "spend_amount"
-    t.string   "time_frame"
+    t.string   "time_frame",        limit: nil
     t.integer  "points_multiplier"
-    t.string   "description"
+    t.string   "description",       limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -42,35 +42,35 @@ ActiveRecord::Schema.define(version: 20151011041917) do
   end
 
   create_table "rewards", force: true do |t|
-    t.boolean  "active",     default: true
+    t.boolean  "active",                 default: true
     t.integer  "point_cost"
     t.integer  "vendor_id"
-    t.string   "title"
+    t.string   "title",      limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "transactions", force: true do |t|
-    t.string   "vendor"
+    t.string   "vendor",     limit: nil
     t.integer  "user_id"
     t.float    "amount"
-    t.string   "category"
+    t.string   "category",   limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|
     t.integer  "points"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email"
+    t.string   "first_name", limit: nil
+    t.string   "last_name",  limit: nil
+    t.string   "email",      limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "vendors", force: true do |t|
-    t.string   "name"
-    t.string   "category"
+    t.string   "name",       limit: nil
+    t.string   "category",   limit: nil
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "logo"

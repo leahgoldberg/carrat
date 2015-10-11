@@ -5,7 +5,23 @@ class CreateRewards < ActiveRecord::Migration
     	t.integer :point_cost
     	t.references :vendor
     	t.string :title
+    	t.string :short_title
+    	t.string :description
+    	t.float :discount_amount
+    	t.float :discount_percentage
+    	t.string :expiration_date
+    	t.string :fine_print
+    	t.string :image_url
+    	t.float :price
+    	t.string :untracked_url
+    	t.float :value
       t.timestamps
     end
   end
 end
+
+
+
+
+
+
