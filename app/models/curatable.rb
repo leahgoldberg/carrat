@@ -6,10 +6,10 @@ module Curatable
 
 	module ClassMethods
 		def curate(user)
-			ranked_possibilities = rank_vendors_and_categories(user).map { |k,v| k}.first(3)
+			ranked_possibilities = rank_vendors_and_categories(user).map { |k,v| k}.first(5)
 			vendors = self.where(vendor_id: Vendor.where(name: ranked_possibilities), active: true)
 			categories = self.where(vendor_id: Vendor.where(category: ranked_possibilities), active: true) 
-			vendors + categories
+			(vendors + categories).uniq
 		end
 
 		private 

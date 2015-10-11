@@ -1,3 +1,9 @@
-#challenges {
-
+.challenge-item {
+  img {
+    float: left;
+    width: 20%;
+  }
+  p {
+    float: right;
+  }
 }
