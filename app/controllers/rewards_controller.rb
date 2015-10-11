@@ -9,19 +9,19 @@ class RewardsController < ApplicationController
 			current_deal = deal_object[1]['deal']
 			vendor = Vendor.find_or_create_by(name: current_deal['merchant']['name'], category: current_deal['category_name'])
 			
-			reward = vendor.rewards.create(
-				title: current_deal['title'],
-		    short_title: current_deal['short_title'],
-		    description: current_deal['description'],
-		    discount_amount: current_deal['discount_amount'],
-		    discount_percentage: current_deal['discount_percentage'],
-		    expires_at: current_deal['expires_at'],
-		    fine_print: current_deal['fine_print'],
-		    image_url: current_deal['image_url'],
-		    price: current_deal['price'],
-		    untracked_url: current_deal['untracked_url'],
-		    value: current_deal['value'],
-			)
+			# reward = vendor.rewards.create(
+			# 	title: current_deal['title'],
+		 #    short_title: current_deal['short_title'],
+		 #    description: current_deal['description'],
+		 #    discount_amount: current_deal['discount_amount'],
+		 #    discount_percentage: current_deal['discount_percentage'],
+		 #    expires_at: current_deal['expires_at'],
+		 #    fine_print: current_deal['fine_print'],
+		 #    image_url: current_deal['image_url'],
+		 #    price: current_deal['price'],
+		 #    untracked_url: current_deal['untracked_url'],
+		 #    value: current_deal['value']
+			# )
 			require 'pry'; binding.pry
 			# puts "*" * 10
 			# puts "deal: #{deal[1][:deal]}"

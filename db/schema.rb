@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(version: 20151011041917) do
     t.float    "discount_amount"
     t.float    "discount_percentage"
     t.string   "expires_at"
-    t.string   "fine_print"
+    t.text     "fine_print"
     t.string   "image_url"
     t.float    "price"
     t.string   "untracked_url"
