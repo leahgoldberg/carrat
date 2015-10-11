@@ -72,7 +72,7 @@
   height: 30px;
   font-size: 10px !important;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 28px;
   border-radius: 6px;
   background: #000;
 }
@@ -84,7 +84,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  line-height: 26px;
+  line-height: 28px;
   text-decoration: none !important;
 }
 
@@ -183,7 +183,7 @@
   display: inline-block;
   position: relative;
   width: 10px;
-  height: 20px; }
+  height: 32px; }
 
 .flip-clock-divider:first-child {
   width: 0; }
@@ -191,12 +191,12 @@
 .flip-clock-dot {
   display: block;
   background: #323434;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   position: absolute;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  left: 5px; }
+  left: 3px; }
 
 .flip-clock-divider .flip-clock-label {
   position: absolute;
@@ -212,10 +212,10 @@
   right: -91px; }
 
 .flip-clock-dot.top {
-  top: 30px; }
+  top: 18px; }
 
 .flip-clock-dot.bottom {
-  bottom: 30px; }
+  bottom: 18px; }
 
 @-webkit-keyframes asd {
   0% {
