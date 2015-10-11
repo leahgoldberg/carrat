@@ -7,7 +7,7 @@
 					<img src="<%= reward.image_url %>">
 					<div class="reward-title"><%= reward.strip_title %></div>
 					<div class="reward-carrats"><%= reward.carrats %> carrats</div>
-					<span><a href="#" data-reveal-id="myModal" class="radius button" id="button-text">More Info&hellip;</a></span>
+					<span id="button-span"><a href="#" data-reveal-id="myModal" class="radius button" id="button-text">More Info&hellip;</a></span>
 					<div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" 		aria-hidden="true" role="dialog">
 					  <h2 id="modalTitle"><%= reward.strip_title %></h2>
 					  <img src="<%= reward.image_url %>">
