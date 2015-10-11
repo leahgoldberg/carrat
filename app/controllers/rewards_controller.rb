@@ -5,10 +5,14 @@ class RewardsController < ApplicationController
 	end	
 
 	def create
-		# require 'pry'; binding.pry
-		params[:deals].each_with_index do |deal,i|
-			puts "*" * 10
-			puts "deal: #{deal[1][:deal]}"
+		params[:deals].each_with_index do |deal_object, index|
+			current_deal = deal_object[1]['deal']
+			vendor = Vendor.find_or_create_by(name: current_deal['merchant']['name'], category: current_deal['category_name'])
+			
+			# Reward.create(current_deal)
+			require 'pry'; binding.pry
+			# puts "*" * 10
+			# puts "deal: #{deal[1][:deal]}"
 		end
 	end
 
