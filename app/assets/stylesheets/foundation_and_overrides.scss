@@ -95,7 +95,7 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
-// $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -129,6 +129,7 @@ $oil         : #212121;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
+  $header-fonts: "fira-sans-2";
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;
@@ -195,10 +196,10 @@ $oil         : #212121;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: $header-fonts;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: $white;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
