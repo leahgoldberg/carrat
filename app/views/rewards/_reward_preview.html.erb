@@ -1,5 +1,11 @@
+<ul class ="small-block-grid-3">
 <% @top3_rewards.each do |top_reward| %>
-  <img src="<%= top_reward.image_url %>">
-  <div><%= top_reward.title %></div>
-  <div>$<%= top_reward.price %></div>
+  <li>
+    <div class="thumbnail">
+      <img src="<%= top_reward.image_url %>">
+    </div>
+    <h6><%= top_reward.title %></h6>
+    <p>$<%= top_reward.price %></p>
+  </li>
 <% end %>
+</ul>
