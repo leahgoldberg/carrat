@@ -1,13 +1,10 @@
 class ClaimedRewardsController < ApplicationController
 
 	def create
-		current_user.claimed_rewards.create(reward: claimed_reward_params[:reward])
+		reward = Reward.find_by(id: params[:id])
+		current_user.claimed_rewards.create(reward: reward)
+		current_user.update_attributes(points: current_user.points - reward.carrats)
 		redirect_to root_path
 	end	
 
-	private
-
-	def claimed_reward_params
-		params.require(:claimed_reward).permit(:reward)
-	end	
 end

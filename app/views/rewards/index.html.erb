@@ -2,10 +2,21 @@
 	<% @rewards.each_slice(4) do |row_of_four| %>
 		<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-4">
 			<% row_of_four.each do |reward| %>
-				<li>
+				<li class="reward-box">
 					<img src="<%= reward.image_url %>">
-					<div><%= reward.stripped_title %></div>
+					<div class="reward-title"><%= reward.strip_title %></div>
 					<div><%= reward.carrats %> carrats</div>
+					<span><a href="#" data-reveal-id="myModal" class="radius button">More Info&hellip;</a></span>
+					<div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" 		aria-hidden="true" role="dialog">
+					  <h2 id="modalTitle"><%= reward.strip_title %></h2>
+					  <img src="<%= reward.image_url %>">
+					  <%= form_for :claimed_reward, url: claimed_rewards_path do |f| %>
+					  	<input type="hidden" name="id" value="<%= reward.id %>">
+					  	<%= f.submit 'Redeem', class: "radius button" %>
+					  <% end %>
+					  <div><%= reward.description.html_safe %></div>
+					  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+					</div>
 				</li>
 			<% end %>
 		</ul>

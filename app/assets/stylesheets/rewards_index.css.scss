@@ -1,11 +1,22 @@
 #rewards-index {
 	padding-top: 50px;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
+
+	#reward-title {
+		font-weight: 700;
+	}
+
 	.reward-box {
-		border: 1px solid black;
+/*		border: 1px solid gray;
 		height: 200px;
 		margin: 5px;
-	/*	width: 150px;*/
+		width: 150px;*/
+		position: relative;
+	}
+
+	#myModal {
+		position: absolute;
+		bottom: 0;
 	}
 }
