@@ -1,0 +1,19 @@
+#user-summary {
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 2px;
+  padding:.5em;
+  margin:1em;
+  h3{
+    float:left;
+    color: #ffffff;
+    margin-left:.5em;
+  }
+
+  #user-avatar{
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #ffffff;
+    float: left;
+  }
+}
