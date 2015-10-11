@@ -1,11 +1,15 @@
 <div class="challenge-item">
+
+
   <%= image_tag(challenge.vendor.logo) %>
 
-  <div class="challenge-text">
-    <h4><%= challenge.vendor.name %></h4>
-    <p><%= challenge.description %></p>
-    <div class="clock" id=<%="countdown-clock-#{challenge.id}"%>></div>
-  </div>
-</div>
+    <div class="description">
+      <h4><%= challenge.vendor.name %></h4>
+      <p><%= challenge.description %></p>
+    </div>  
 
+    <div class="clock" id=<%="countdown-clock-#{challenge.id}"%>></div>
+
+
+</div>
 <hr/>
