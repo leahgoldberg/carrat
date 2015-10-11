@@ -1,6 +1,27 @@
 # Users
 
-User.create(points: 7000, first_name: "Morgan", last_name: "Stanley", email: "m.stanly@example.com")
+morgan = User.create(points: 7000, first_name: "Morgan", last_name: "Stanley", email: "m.stanly@example.com")
+
+# Transactions
+
+morgan.transactions.create(vendor: "Whole Foods", amount:10.25, category: "Groceries")
+morgan.transactions.create(vendor: "Whole Foods", amount:17.15, category: "Groceries")
+morgan.transactions.create(vendor: "Whole Foods", amount:80.56, category: "Groceries")
+morgan.transactions.create(vendor: "Whole Foods", amount:30.56, category: "Groceries")
+morgan.transactions.create(vendor: "Whole Foods", amount:20.56, category: "Groceries")
+morgan.transactions.create(vendor: "grocery", amount:20.56, category: "Groceries")
+morgan.transactions.create(vendor: "grocery", amount:20.56, category: "Groceries")
+morgan.transactions.create(vendor: "Nordstrom", amount:520.56, category: "Fashion")
+morgan.transactions.create(vendor: "Nordstrom", amount:200.88, category: "Fashion")
+morgan.transactions.create(vendor: "Nordstrom", amount:144.52, category: "Fashion")
+morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
+morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
+morgan.transactions.create(vendor: "Starbucks", amount:3.32, category: "Coffee")
+morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
+morgan.transactions.create(vendor: "Starbucks", amount:4.45, category: "Coffee")
+morgan.transactions.create(vendor: "Starbucks", amount:3.32, category: "Coffee")
+morgan.transactions.create(vendor: "some place", amount:20.56, category: "Groceries")
+morgan.transactions.create(vendor: "grocery", amount:20.56, category: "Groceries")
 
 # Vendors
 
@@ -27,7 +48,7 @@ time = ["between 12-2PM","anytime","between 8AM-12PM","between 10AM-12PM","betwe
 pts = [2,2,2,2,3]
 
 Vendor.all.each do |v|
-	Challenge.create(vendor: v, spend_amount: amt.sample, time_frame: time.sample, points_multiplier: pts.sample)
+	v.challenges.create(spend_amount: amt.sample, time_frame: time.sample, points_multiplier: pts.sample)
 end
 
 # Rewards

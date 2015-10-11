@@ -1,5 +1,10 @@
 class WelcomeController < ApplicationController
-  def index
 
-  end
+	def index
+		@current_user = current_user
+		@top_challenges = Challenge.curate(current_user)
+		@top_rewards = Reward.curate(current_user)
+		@preferred_brands = current_user.preferred_brands
+	end
+
 end
