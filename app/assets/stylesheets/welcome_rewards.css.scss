@@ -7,24 +7,33 @@ p {
 h6{
   color:#ffffff;
 }
-.thumbnail {
-  position: relative;
-  width: 10em;
-  height: 10em;
-  overflow: hidden;
+
+.transparent{
+  opacity: 0;
 }
-.thumbnail img {
-  position: absolute;
-  border-style: solid;
-  border-color:#ffffff;
-  border-radius: 100%;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+
+.th-small-item{
+    border-radius:100%;
+    height: 7em;
+    width: 7em;
+    overflow: hidden;
+    background-position: center;
+}
+
+.th-medium-item{
+    border-radius:100%;
+    height: 8em;
+    width: 8em;
+    overflow: hidden;
+    background-position: center;
+}
+
+.th-item{
+    border-radius:100%;
+    height:11em;
+    width: 11em;
+    overflow: hidden;
+    background-position: center;
 }
 
 
