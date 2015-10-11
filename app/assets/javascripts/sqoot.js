@@ -1,5 +1,5 @@
 function initSqoot() {
-	$.getJSON("http://api.sqoot.com/v2/deals?api_key=w40j1z&callback=?").done(function(data){
+	$.ajax("http://api.sqoot.com/v2/deals?api_key=w40j1z").done(function(data){
 		$.ajax({
 		  method: "POST",
 		  url: "/rewards",
