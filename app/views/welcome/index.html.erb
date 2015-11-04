@@ -24,8 +24,13 @@
         <div id="new-notification" style="display:none">
           <hr/>
           <div class="notification">
+            <div id="check_box">
+              <%= image_tag 'check_box.png', size: '20' %>
+            </div>
+            <div id="check">
             <h6 id="new-note-title">Completed Target 2x points challenge for 2400 carrats</h6>
             <p id="new-note-time">Today at 5:15 PM</p>
+          </div>
           </div>
         </div>
           <%= render partial: "users/notification", collection: @notifications %>

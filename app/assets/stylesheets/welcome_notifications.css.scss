@@ -42,5 +42,15 @@ h2#modalTitle {
   margin-top: 30px;
   box-shadow: 0px 2px 9px 1px rgba(103,159,66,1);
   padding: 10px 20px;
-  padding-bottom:7em;
+  padding-bottom:8em;
+}
+
+#check_box{
+  position: absolute;
+  padding-top:1.6em;
+}
+#check{
+padding-left:2.5em;
+  float:left;
+  position:relative;
 }
