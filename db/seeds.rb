@@ -27,7 +27,7 @@ morgan.transactions.create(vendor: "Starbucks", amount:3.32, category: "Coffee")
 Vendor.create(name: "Whole Foods", category: "Groceries", logo: "groceries_icon.png")
 Vendor.create(name: "Nordstrom", category: "Fashion", logo: "fashion_icon.png")
 Vendor.create(name: "Trader Joes", category: "Groceries", logo: "groceries_icon.png")
-Vendor.create(name: "Starbucks", category: "Coffee", logo:"coffe_icon.png")
+Vendor.create(name: "Starbucks", category: "Coffee", logo:"coffee_icon.png")
 
 
 # Challenges
