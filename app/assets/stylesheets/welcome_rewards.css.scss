@@ -28,6 +28,9 @@ h6{
     width: 7em;
     overflow: hidden;
     background-position: center;
+    .carrat-pts{
+    color:#fbae37;
+    }
 }
 
 .th-medium-item{
@@ -40,6 +43,7 @@ h6{
 
 .th-item{
     border-radius:100%;
+    border-color: #8bc249;
     height:11em;
     width: 11em;
     overflow: hidden;
