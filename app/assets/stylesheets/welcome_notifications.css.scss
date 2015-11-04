@@ -1,8 +1,8 @@
 #notify-trigger{
-    color: #ffffff;
+    color: #000000;
   h3{
     font-family: "fira-sans-2";
-    color: #ffffff;
+    color: #000000;
     text-align: center;
   }
 }
@@ -10,11 +10,13 @@
   h6 {
     font-size: 12pt;
     text-align: left;
+    color:black;
   }
   p {
     font-size: 10pt;
     color: gray;
   }
+
 }
 h2#modalTitle {
   color: black;
