@@ -8,13 +8,19 @@
 }
 .notification {
   h6 {
+  float:left;
     font-size: 12pt;
     text-align: left;
     color:black;
   }
   p {
+  float:left;
     font-size: 10pt;
     color: gray;
+  }
+  img{
+  float:left;
+  vertical-align:middle;
   }
 
 }
@@ -28,3 +34,6 @@ h2#modalTitle {
   }
 }
 
+.index-river{
+  padding-bottom:7em;
+}
