@@ -2,19 +2,19 @@
 
 #redeem-title{
     font-family: "fira-sans-2";
-    color: #ffffff;
+    color: #000000;
     text-align:center;
 
 }
 
 p {
-  color: #ffffff;
+  color: #8bc249;
   font-family: "fira-mono",sans-serif;
   text-align: center;
 }
 
 h6{
-  color:#ffffff;
+  color:#000000;
   font-family: "fira-sans-2",sans-serif;
 }
 
@@ -28,6 +28,9 @@ h6{
     width: 7em;
     overflow: hidden;
     background-position: center;
+    .carrat-pts{
+    color:#fbae37;
+    }
 }
 
 .th-medium-item{
@@ -40,6 +43,7 @@ h6{
 
 .th-item{
     border-radius:100%;
+    border-color: #8bc249;
     height:11em;
     width: 11em;
     overflow: hidden;
@@ -49,6 +53,6 @@ h6{
 
 #rewards-link{
   font-family: "fira-sans-2";
-  color: #ffffff;
+  color: #000000;
 
 }

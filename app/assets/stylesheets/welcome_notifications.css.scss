@@ -1,20 +1,28 @@
 #notify-trigger{
-    color: #ffffff;
+    color: #000000;
   h3{
     font-family: "fira-sans-2";
-    color: #ffffff;
+    color: #000000;
     text-align: center;
   }
 }
 .notification {
   h6 {
+  float:left;
     font-size: 12pt;
     text-align: left;
+    color:black;
   }
   p {
+  float:left;
     font-size: 10pt;
     color: gray;
   }
+  img{
+  float:left;
+  vertical-align:middle;
+  }
+
 }
 h2#modalTitle {
   color: black;
@@ -26,3 +34,23 @@ h2#modalTitle {
   }
 }
 
+
+.notindex-river {
+  text-align: left;
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-top: 30px;
+  box-shadow: 0px 2px 9px 1px rgba(103,159,66,1);
+  padding: 10px 20px;
+  padding-bottom:8em;
+}
+
+#check_box{
+  position: absolute;
+  padding-top:1.6em;
+}
+#check{
+padding-left:2.5em;
+  float:left;
+  position:relative;
+}

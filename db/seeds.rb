@@ -27,7 +27,7 @@ morgan.transactions.create(vendor: "Starbucks", amount:3.32, category: "Coffee")
 Vendor.create(name: "Whole Foods", category: "Groceries", logo: "groceries_icon.png")
 Vendor.create(name: "Nordstrom", category: "Fashion", logo: "fashion_icon.png")
 Vendor.create(name: "Trader Joes", category: "Groceries", logo: "groceries_icon.png")
-Vendor.create(name: "Starbucks", category: "Coffee", logo:"coffe_icon.png")
+Vendor.create(name: "Starbucks", category: "Coffee", logo:"coffee_icon.png")
 
 
 # Challenges
@@ -49,7 +49,7 @@ cost = [200,500,1000,2000,5000,10000,50000]
 morgan.notifications.create(content: "Redeemed fine art prints from Imagine Squares for 1000 carrats", notified_day: "Yesterday at 12:02 PM")
 morgan.notifications.create(content: "Completed 3x points challenge at Exxon for 250 carrats", notified_day: "Yesterday at 1:22 PM")
 morgan.notifications.create(content: "Redeemed Jamaican vacation from American Airlines for 50,000 carrats", notified_day: "Yesterday at 6:28 PM")
-morgan.notifications.create(content: "Completed 2x points challenge at Target for 650 carrats", notified_day: "Friday at 1:34 PM")
+
 
 
 
